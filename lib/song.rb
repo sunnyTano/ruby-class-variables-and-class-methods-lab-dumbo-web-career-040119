@@ -26,7 +26,8 @@ def self.artist
 end 
 
 def self.genres
-
+  @@genres.uniq
+end 
 #   def self.artist_count
 #     artist_count = {}
 #     @@artists.each do |artist|
