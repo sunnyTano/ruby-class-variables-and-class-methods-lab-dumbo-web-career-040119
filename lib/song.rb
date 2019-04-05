@@ -32,8 +32,7 @@ end
 def self.artist_count
   artist_count = Hash.new
   @@artist.each do |artist|
-    artist_count =artist_count[artist]? artist_count[artist] += 1 : artist_count[artist] = 1
-      artist_count[artist] += 1 
+    artist_count = artist_count[artist]? artist_count[artist] += 1 : artist_count[artist] = 1
  end
 end 
 #   def self.artist_count
