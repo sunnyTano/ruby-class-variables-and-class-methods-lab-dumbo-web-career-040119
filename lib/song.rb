@@ -28,6 +28,9 @@ end
 def self.genres
   @@genre.uniq
 end 
+
+def self.artist_arr
+  artist_arr = Hash.new
 #   def self.artist_count
 #     artist_count = {}
 #     @@artists.each do |artist|
