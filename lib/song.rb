@@ -31,6 +31,16 @@ end
 
 def self.artist_arr
   artist_arr = Hash.new
+  @@artist.map do |artist|
+    if artist_arr[artist]
+      artist_arr[artist] += 1 
+    else
+      artist_arr[artist] = 1
+    end
+  end 
+end 
+  artist_arr
+end 
 #   def self.artist_count
 #     artist_count = {}
 #     @@artists.each do |artist|
