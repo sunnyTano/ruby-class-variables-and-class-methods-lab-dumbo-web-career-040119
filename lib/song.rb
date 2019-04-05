@@ -29,10 +29,10 @@ def self.genres
   @@genre.uniq
 end 
 
-def self.artist_arr
-  artist_arr = Hash.new
+def self.artist_count
+  artist_count = Hash.new
   @@artist.map do |artist|
-    if artist_arr[artist]
+    if artist_count[artist]
       artist_arr[artist] += 1 
     else
       artist_arr[artist] = 1
