@@ -33,9 +33,9 @@ def self.artist_count
   artist_count = Hash.new
   @@artist.map do |artist|
     if artist_count[artist]
-      artist_arr[artist] += 1 
+      artist_count[artist] += 1 
     else
-      artist_arr[artist] = 1
+      artist_count[artist] = 1
     end
   end 
 
