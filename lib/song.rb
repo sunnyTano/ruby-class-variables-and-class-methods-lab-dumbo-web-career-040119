@@ -38,8 +38,7 @@ def self.artist_count
       artist_count[artist] = 1
     end
   end 
-
-  artist_arr
+  artist_count
 end 
 #   def self.artist_count
 #     artist_count = {}
